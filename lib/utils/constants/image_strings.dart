@@ -42,4 +42,11 @@ class SsappImages {
       "assets/icons/categories/juicy-books-4.png";
   static const String funBooksIcon =
       "assets/icons/categories/juicy-three-books.png";
+
+  static const String artBanner = "assets/images/banners/art-sales.jpg";
+  static const String bookBanner = "assets/images/banners/book-sales.jpg";
+  static const String techBanner = "assets/images/banners/computer-sales.jpg";
+  static const String toyBanner = "assets/images/banners/toy-sales.jpg";
+  static const String stationeryBanner =
+      "assets/images/banners/stationery-sales.jpg";
 }
