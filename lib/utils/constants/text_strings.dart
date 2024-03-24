@@ -14,4 +14,8 @@ class SsappTexts {
   // Home page
   static const String homeAppBarTitle = "Wonderful day for shopping";
   static const String homeAppBarSubTitle = "Tendwa Tirus";
+
+  static const String loginTitle = "Welcome Back,";
+  static const String loginSubTitle =
+      "Discover Limitless Choices and Unmatched Convinience";
 }
