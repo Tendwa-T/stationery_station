@@ -34,6 +34,12 @@ flutter:
     - assets/icons/brands/
     - assets/icons/categories/
     - assets/images/banners/
+    - assets/images/products/art/
+    - assets/images/products/books/
+    - assets/images/products/educationBooks/
+    - assets/images/products/electronics/
+    - assets/images/products/stationery/
+    - assets/images/products/toys/
     - assets/images/animations/
     - assets/images/on_boarding_images/
     - assets/logos/

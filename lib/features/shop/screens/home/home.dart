@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:stationery_station/common/widgets/containers/primary_header_container.dart';
 import 'package:stationery_station/common/widgets/containers/search_container.dart';
+import 'package:stationery_station/common/widgets/layouts/grid_layout.dart';
+import 'package:stationery_station/common/widgets/products/product_cards/product_card_vertical.dart';
+import 'package:stationery_station/common/widgets/texts/section_heading.dart';
 import 'package:stationery_station/features/shop/screens/home/widgets/home_appbar.dart';
 import 'package:stationery_station/features/shop/screens/home/widgets/home_categories.dart';
 import 'package:stationery_station/features/shop/screens/home/widgets/promo_slider.dart';
@@ -12,11 +15,11 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: SingleChildScrollView(
         child: Column(
           children: [
-            SsappPrimaryHeaderContainer(
+            const SsappPrimaryHeaderContainer(
               child: Column(
                 children: [
                   // AppBar
@@ -35,14 +38,32 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: EdgeInsets.all(SsappSizes.defaultSpace),
-              child: SsappPromoSlider(
-                banners: [
-                  SsappImages.artBanner,
-                  SsappImages.toyBanner,
-                  SsappImages.techBanner,
-                  SsappImages.bookBanner,
-                  SsappImages.stationeryBanner,
+              padding: const EdgeInsets.all(SsappSizes.defaultSpace),
+              child: Column(
+                children: [
+                  const SsappPromoSlider(
+                    banners: [
+                      SsappImages.artBanner,
+                      SsappImages.toyBanner,
+                      SsappImages.techBanner,
+                      SsappImages.bookBanner,
+                      SsappImages.stationeryBanner,
+                    ],
+                  ),
+                  const SizedBox(
+                    height: SsappSizes.spaceBetweenSections,
+                  ),
+                  SsappSectionHeading(
+                    title: "Popular Products",
+                    onPressed: () {},
+                  ),
+                  const SizedBox(
+                    height: SsappSizes.spaceBetweenItems,
+                  ),
+                  SsappGridLayout(
+                    itemBuilder: (_, index) => const SsappProductCardVertical(),
+                    itemCount: 4,
+                  ),
                 ],
               ),
             ),

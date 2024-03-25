@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class SsappSectionHeading extends StatelessWidget {
   const SsappSectionHeading({
     super.key,
-    this.onPressed,
+    required this.onPressed,
     this.textColor,
     this.buttonTitle = 'View all',
     this.showActionButton = true,
@@ -13,7 +13,7 @@ class SsappSectionHeading extends StatelessWidget {
   final Color? textColor;
   final bool showActionButton;
   final String title, buttonTitle;
-  final void Function()? onPressed;
+  final void Function() onPressed;
 
   @override
   Widget build(BuildContext context) {

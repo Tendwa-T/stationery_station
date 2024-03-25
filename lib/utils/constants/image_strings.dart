@@ -49,4 +49,64 @@ class SsappImages {
   static const String toyBanner = "assets/images/banners/toy-sales.jpg";
   static const String stationeryBanner =
       "assets/images/banners/stationery-sales.jpg";
+
+  // Art Images
+  static const String productImage1 =
+      "assets/images/products/art/faber-castel-brush-set.jpg";
+  static const String productImage2 =
+      "assets/images/products/art/faber-castel-canvas.jpg";
+  static const String productImage3 =
+      "assets/images/products/art/faber-castel-color-pallet.jpg";
+  static const String productImage4 =
+      "assets/images/products/art/faber-castel-color-set.jpg";
+
+  // Book Images
+  static const String productImage5 =
+      "assets/images/products/books/born-a-crime.jpg";
+  static const String productImage6 =
+      "assets/images/products/books/of-pawns-and-players.jpg";
+  static const String productImage7 =
+      "assets/images/products/books/richest-man-in-babylon.jpg";
+  static const String productImage8 =
+      "assets/images/products/books/when-breath-becomes-air.jpg";
+
+  // Educational Book Images
+  static const String productImage9 =
+      "assets/images/products/educationBooks/kmf-math.jpg";
+  static const String productImage10 =
+      "assets/images/products/educationBooks/knec-four-figure.jpg";
+  static const String productImage11 =
+      "assets/images/products/educationBooks/oxford-dictionary.jpg";
+  static const String productImage12 =
+      "assets/images/products/educationBooks/tuki-kamusi.jpg";
+
+  // Electronics Images
+  static const String productImage13 =
+      "assets/images/products/electronics/canon-printer.jpg";
+  static const String productImage14 =
+      "assets/images/products/electronics/casio-fx991-calculator.jpg";
+  static const String productImage15 =
+      "assets/images/products/electronics/logitech-mk295.jpg";
+  static const String productImage16 =
+      "assets/images/products/electronics/oraimo-powerbank.jpg";
+
+  // Stationery Images
+  static const String productImage17 =
+      "assets/images/products/stationery/box-files.jpg";
+  static const String productImage18 =
+      "assets/images/products/stationery/exercisebook-ruled.jpg";
+  static const String productImage19 =
+      "assets/images/products/stationery/gelx-pens.jpg";
+  static const String productImage20 =
+      "assets/images/products/stationery/pelican-erasers.jpg";
+
+  // Toys Images
+  static const String productImage21 =
+      "assets/images/products/toys/batman-puzzle.jpg";
+  static const String productImage22 =
+      "assets/images/products/toys/hasbro-clue.jpg";
+  static const String productImage23 =
+      "assets/images/products/toys/hasbro-jenga.jpg";
+  static const String productImage24 =
+      "assets/images/products/toys/monopoly.jpg";
 }

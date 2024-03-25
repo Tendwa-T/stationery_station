@@ -16,10 +16,11 @@ class SsappHomeCategories extends StatelessWidget {
       padding: const EdgeInsets.only(left: SsappSizes.defaultSpace),
       child: Column(
         children: [
-          const SsappSectionHeading(
+          SsappSectionHeading(
             title: 'Popular Categories',
             textColor: SsappColors.textWhite,
             showActionButton: false,
+            onPressed: () {},
           ),
           const SizedBox(height: SsappSizes.spaceBetweenItems),
           SizedBox(
