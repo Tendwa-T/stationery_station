@@ -3,6 +3,7 @@ import 'package:stationery_station/common/styles/shadows.dart';
 import 'package:stationery_station/common/widgets/containers/rounded_container.dart';
 import 'package:stationery_station/common/widgets/icons/circular_icon.dart';
 import 'package:stationery_station/common/widgets/images/rounded_images.dart';
+import 'package:stationery_station/common/widgets/texts/brand_title_text_verified.dart';
 import 'package:stationery_station/common/widgets/texts/product_price_text.dart';
 import 'package:stationery_station/common/widgets/texts/product_title_text.dart';
 import 'package:stationery_station/utils/constants/colors.dart';
@@ -38,7 +39,7 @@ class SsappProductCardVertical extends StatelessWidget {
                   // Thumbnail Image
                   const SsappRoundedImage(
                     width: double.maxFinite,
-                    imageUrl: SsappImages.productImage1,
+                    imageUrl: SsappImages.productImage16,
                     applyImageRadius: true,
                   ),
                   // Sale Tag
@@ -76,35 +77,20 @@ class SsappProductCardVertical extends StatelessWidget {
               height: SsappSizes.spaceBetweenItems / 2,
             ),
             // Details
-            Padding(
-              padding: const EdgeInsets.only(left: SsappSizes.sm),
+            const Padding(
+              padding: EdgeInsets.only(left: SsappSizes.sm),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const SsappProductTitleText(
-                    title: "Brush Set",
+                  SsappProductTitleText(
+                    title: "Oraimo Powerbank",
                     smallSize: true,
                   ),
-                  const SizedBox(
+                  SizedBox(
                     height: SsappSizes.spaceBetweenItems / 2,
                   ),
-                  Row(
-                    children: [
-                      Text(
-                        "Faber Castel",
-                        overflow: TextOverflow.ellipsis,
-                        maxLines: 1,
-                        style: Theme.of(context).textTheme.labelMedium,
-                      ),
-                      const SizedBox(
-                        width: SsappSizes.xs,
-                      ),
-                      const Icon(
-                        Icons.verified,
-                        color: SsappColors.primary,
-                        size: SsappSizes.iconXs,
-                      )
-                    ],
+                  SsappBrandTitleVerified(
+                    title: "Oraimo",
                   ),
                 ],
               ),
@@ -116,7 +102,7 @@ class SsappProductCardVertical extends StatelessWidget {
                 const Padding(
                   padding: EdgeInsets.only(left: SsappSizes.sm),
                   child: SsappProductPriceText(
-                    price: "200.0",
+                    price: "10,000.0",
                   ),
                 ),
                 Container(

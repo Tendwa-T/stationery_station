@@ -109,4 +109,17 @@ class SsappImages {
       "assets/images/products/toys/hasbro-jenga.jpg";
   static const String productImage24 =
       "assets/images/products/toys/monopoly.jpg";
+
+  // Brand Icons
+  static const String ankerBrand = "assets/images/brandIcons/anker.jpg";
+  static const String bicBrand = "assets/images/brandIcons/bic.jpg";
+  static const String domsBrand = "assets/images/brandIcons/doms.jpg";
+  static const String fevicrylBrand = "assets/images/brandIcons/fevicryl.jpg";
+  static const String hpBrand = "assets/images/brandIcons/hp.jpg";
+  static const String karatasiBrand = "assets/images/brandIcons/karatasi.jpg";
+  static const String lenovoBrand = "assets/images/brandIcons/Lenovo.jpg";
+  static const String logitechBrand = "assets/images/brandIcons/logitech.jpg";
+  static const String pebeoBrand = "assets/images/brandIcons/pebeo.jpg";
+  static const String pelicanBrand = "assets/images/brandIcons/pelican.jpg";
+  static const String uniBallBrand = "assets/images/brandIcons/uni-ball.jpg";
 }

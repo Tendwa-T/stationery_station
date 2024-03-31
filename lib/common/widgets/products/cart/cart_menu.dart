@@ -1,25 +1,27 @@
 import 'package:flutter/material.dart';
 import 'package:stationery_station/utils/constants/colors.dart';
+import 'package:stationery_station/utils/helpers/helper_functions.dart';
 
 class SsappCartCounterIcon extends StatelessWidget {
   const SsappCartCounterIcon({
     super.key,
     required this.onPressed,
-    required this.iconColor,
+    this.iconColor,
   });
 
-  final Color iconColor;
+  final Color? iconColor;
   final VoidCallback onPressed;
 
   @override
   Widget build(BuildContext context) {
+    final bool dark = SsappHelperFunction.isDarkMode(context);
     return Stack(
       children: [
         IconButton(
           onPressed: onPressed,
           icon: Icon(
             Icons.shopping_bag_outlined,
-            color: iconColor,
+            color: iconColor ?? (dark ? SsappColors.light : SsappColors.dark),
           ),
         ),
         Positioned(

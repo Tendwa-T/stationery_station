@@ -34,6 +34,7 @@ flutter:
     - assets/icons/brands/
     - assets/icons/categories/
     - assets/images/banners/
+    - assets/images/brandIcons/
     - assets/images/products/art/
     - assets/images/products/books/
     - assets/images/products/educationBooks/

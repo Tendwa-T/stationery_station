@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:stationery_station/utils/constants/colors.dart';
 import 'package:stationery_station/utils/constants/sizes.dart';
 
 class SsappRoundedImage extends StatelessWidget {
@@ -10,7 +9,7 @@ class SsappRoundedImage extends StatelessWidget {
     this.height,
     this.applyImageRadius = true,
     this.border,
-    this.backgroundColor = SsappColors.light,
+    this.backgroundColor,
     this.fit = BoxFit.contain,
     this.padding,
     this.isNetworkImage = false,
@@ -22,7 +21,7 @@ class SsappRoundedImage extends StatelessWidget {
   final double? width, height;
   final bool applyImageRadius;
   final BoxBorder? border;
-  final Color backgroundColor;
+  final Color? backgroundColor;
   final BoxFit? fit;
   final EdgeInsetsGeometry? padding;
   final bool isNetworkImage;
